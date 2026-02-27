@@ -1,0 +1,31 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+
+  @include respond-md {
+    padding: 22px;
+  }
+}
+
+.page--list .cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+
+  @include respond-sm {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond-lg {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.page--attempt {
+  display: grid;
+  gap: 14px;
+}

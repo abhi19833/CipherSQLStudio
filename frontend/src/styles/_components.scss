@@ -1,0 +1,182 @@
+@use "./variables" as *;
+
+.hero {
+  margin-bottom: 14px;
+}
+
+.hero__title {
+  font-size: 1.8rem;
+}
+
+.hero__subtitle {
+  color: $color-muted;
+  margin-top: 4px;
+}
+
+.assignment-card {
+  background: $color-surface;
+  border: 1px solid $border;
+  border-radius: $radius;
+  padding: 14px;
+  display: grid;
+  gap: 8px;
+}
+
+.assignment-card__meta {
+  width: max-content;
+  background: #e0f2f1;
+  color: #0d524f;
+  font-size: 0.82rem;
+  padding: 4px 8px;
+  border-radius: 20px;
+}
+
+.assignment-card__title {
+  font-size: 1.1rem;
+}
+
+.assignment-card__desc {
+  color: $color-muted;
+  line-height: 1.5;
+}
+
+.attempt-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.attempt-header__difficulty {
+  font-size: 0.95rem;
+  color: $color-muted;
+}
+
+.panel {
+  background: $color-surface;
+  border: 1px solid $border;
+  border-radius: $radius;
+  padding: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+.panel__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.button {
+  border: 0;
+  border-radius: 8px;
+  background: $color-primary;
+  color: #fff;
+  padding: 12px 14px;
+  min-height: 44px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.95rem;
+}
+
+.button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.button--ghost {
+  background: #dce8e8;
+  color: #113d3e;
+}
+
+.status {
+  font-size: 0.98rem;
+  color: $color-muted;
+}
+
+.status--error {
+  color: $color-danger;
+}
+
+.sample-data {
+  display: grid;
+  gap: 10px;
+}
+
+.sample-data__table-card {
+  border: 1px solid $border;
+  border-radius: 10px;
+  padding: 10px;
+  display: grid;
+  gap: 8px;
+}
+
+.sample-data__table-title {
+  font-size: 1rem;
+}
+
+.sample-data__schema-list {
+  margin: 6px 0 0;
+  padding-left: 18px;
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.result-table th,
+.result-table td {
+  border: 1px solid $border;
+  padding: 8px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.hint-box {
+  background: #f0faf7;
+  border: 1px solid #ccebe3;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 0.95rem;
+}
+
+.attempt-list {
+  display: grid;
+  gap: 10px;
+}
+
+.attempt-item {
+  border: 1px solid $border;
+  border-radius: 10px;
+  padding: 10px;
+  display: grid;
+  gap: 6px;
+}
+
+.attempt-item__top {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.attempt-item__time {
+  font-size: 0.9rem;
+  color: $color-muted;
+}
+
+.attempt-item__query {
+  white-space: pre-wrap;
+  word-break: break-word;
+  background: #f8fafc;
+  border-radius: 8px;
+  padding: 8px;
+}
